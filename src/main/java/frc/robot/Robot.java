@@ -70,6 +70,9 @@ public class Robot extends TimedRobot {
   @Override
   public void robotInit() {
    
+
+    // ALL MY HOMIES HATE ERROR CODE 2
+
     m_leftLeadMotor = new CANSparkMax(5,MotorType.kBrushless);
     m_rightLeadMotor = new CANSparkMax(4,MotorType.kBrushless);
     m_leftFollowMotor = new CANSparkMax(3,MotorType.kBrushless);
@@ -144,6 +147,8 @@ public class Robot extends TimedRobot {
  SmartDashboard.putNumber(   "IMU_Yaw",              ahrs.getYaw());
  SmartDashboard.putNumber(   "IMU_Pitch",            ahrs.getPitch());
  SmartDashboard.putNumber(   "IMU_Roll",             ahrs.getRoll());
+
+ 
     
   }
 
